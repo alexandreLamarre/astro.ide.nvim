@@ -18,6 +18,7 @@ return {
       end,
       desc = "Pick to close",
     },
+    -- Rust commands
     ["<leader>rc"] = {
       function()
         vim.cmd("RustOpenCargo")
@@ -35,6 +36,12 @@ return {
         --TODO: FIXME: figure out how to call rust-tools here
       end,
       desc = "Cargo test"
+    },
+    ["<leader>rg"] = {
+      function()
+        vim.cmd("RustRunnables")
+      end,
+      desc = "Rust Runnables"
     },
     ["<leader>rr"] = {
       function()
