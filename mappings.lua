@@ -78,29 +78,37 @@ return {
       function()
         require("crates").update_all_crates()
       end,
+      desc = "Update all crates"
     },
     ["<leader>rC"] = {
       function()
         require("crates").open_crates_io()
       end,
-      desc = "open crates.io"
+      desc = "Open crates.io"
     },
     ["<leader>rD"] = {
       function()
         require("crates").open_documentation()
       end,
-      desc = "open crate documentation"
+      desc = "Open crate documentation"
     },
     ["<leader>rR"] = {
       function()
         require("crates").open_repository()
       end,
-      desc = "open crate repository"
+      desc = "Open crate repository"
     },
     ["<leader>H"] = {
       function()
         require("crates").open_homepage()
-      end
+      end,
+      desc = "Open crate homepage"
+    },
+    ["<leader>a"] = {
+      function()
+        vim.cmd("TroubleToggle")
+      end,
+      desc = "Toggle diagnostics windows",
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus

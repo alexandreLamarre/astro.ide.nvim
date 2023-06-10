@@ -26,10 +26,6 @@ return {
 		}
 	},
 	{
-		"Saecki/crates.nvim",
-		opts = {},
-	},
-	{
 		"copilot.lua",
 		opts = {
 			suggestion = {
